@@ -15,14 +15,14 @@ The Risk Radar project is designed to enhance sensitive data protection within o
 - **Regex-based Pattern Matching**: Employs regular expression libraries to create a powerful and flexible pattern matching system for identifying sensitive data.
 - **PHP Programming Language**: Leverages PHP to develop a user-friendly and interactive dashboard for data visualization.
 - **Agile Development Methodology**: Follows Agile principles to ensure iterative development, continuous feedback, and timely delivery of project milestones.
-- **Web Server Infrastructure**: Deployed on a scalable web server infrastructure to ensure reliability and performance.
+
 
 ## Project Highlights
 
 - **Accurate Data Identification**: The regex-based system significantly improves the accuracy of sensitive data identification.
 - **User-friendly Interface**: The PHP dashboard enhances the ability to visualize and manage sensitive data effectively.
 - **Efficient Project Management**: Agile methodology facilitates efficient project management and quick delivery of features.
-- **Reliable Deployment**: The scalable web server infrastructure ensures that the solution is reliable and can handle organizational needs.
+
 
 ## Installation
 
