@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive File Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        #upload-container {
+            padding: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #000000; /* Set background color to white */
+            color: black; /* Set text color to black */
+        }
+        #upload-input {
+            display: none;
+        }
+        #uploaded-file {
+            display: none;
+        }
+
+        p {
+            color: rgb(51, 194, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(51, 194, 22);">File Upload Page</h1>
+    <div id="upload-container">
+        <p>Click or drag & drop a file here to upload</p>
+        <input type="file" id="upload-input" accept="image/*" />
+    </div>
+    <div id="uploaded-file">
+        <p>File uploaded successfully!</p>
+    </div>
+    <div class="gif-container">
+        <img src="123.gif" alt="Animated GIF" width="450">
+    </div>
+
+    <script>
+        const uploadContainer = document.getElementById("upload-container");
+        const uploadInput = document.getElementById("upload-input");
+        const uploadedFile = document.getElementById("uploaded-file");
+
+        uploadContainer.addEventListener("click", () => {
+            uploadInput.click();
+        });
+
+        uploadInput.addEventListener("change", (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                // You can add code here to handle the uploaded file, e.g., send it to a server or display it on the page.
+                uploadedFile.style.display = "block";
+                uploadContainer.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>     
